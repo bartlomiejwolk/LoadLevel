@@ -1,6 +1,6 @@
 # LoadLevel
 
-*LoadLevel* extension for Unity. Loads level at runtime with keyboard shortcuts.
+*LoadLevel* extension for Unity. Loads levels at runtime with keyboard shortcuts.
 
 Licensed under MIT license. See LICENSE file in the project root folder.   
 Extensions with version below 1.0.0 are considered to be pre/alpha and may not work properly.
@@ -13,7 +13,7 @@ Extensions with version below 1.0.0 are considered to be pre/alpha and may not w
 
 ## Resources
 
-* [Blog post]()
+* [Blog post](https://bartlomiejwolk.wordpress.com/2015/05/29/load-level/)
 
 ## Quick Start
 
