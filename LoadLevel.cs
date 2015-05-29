@@ -1,4 +1,9 @@
-﻿using UnityEngine;
+﻿// Copyright (c) 2015 Bartlomiej Wolk (bartlomiejwolk@gmail.com)
+//  
+// This file is part of the LoadLevel extension for Unity.
+// Licensed under the MIT license. See LICENSE file in the project root folder.
+
+using UnityEngine;
 
 namespace LoadLevelEx {
 
@@ -62,8 +67,11 @@ namespace LoadLevelEx {
         private void Reset() { }
 
         private void Start() { }
-
-        private void Update() { }
+        private void Update() {
+            if (Input.GetKeyDown(KeyCode.R)) {
+                Reload();
+            }
+        }
 
         private void OnValidate() { }
 
@@ -82,6 +90,14 @@ namespace LoadLevelEx {
         #endregion
 
         #region METHODS
+
+        /// <summary>
+        /// Reloads level.
+        /// </summary>
+        private void Reload() {
+            Application.LoadLevel(Application.loadedLevel);
+        }
+
         #endregion
 
     }
