@@ -62,8 +62,11 @@ namespace LoadLevelEx {
         private void Reset() { }
 
         private void Start() { }
-
-        private void Update() { }
+        private void Update() {
+            if (Input.GetKeyDown(KeyCode.R)) {
+                Reload();
+            }
+        }
 
         private void OnValidate() { }
 
@@ -80,9 +83,12 @@ namespace LoadLevelEx {
 
         #region EVENT HANDLERS
         #endregion
+            #region METHODS
+        private void Reload() {
+            Application.LoadLevel(Application.loadedLevel);
+        }
 
-        #region METHODS
-        #endregion
+            #endregion
 
     }
 
