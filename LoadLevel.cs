@@ -88,12 +88,17 @@ namespace LoadLevelEx {
 
         #region EVENT HANDLERS
         #endregion
-            #region METHODS
+
+        #region METHODS
+
+        /// <summary>
+        /// Reloads level.
+        /// </summary>
         private void Reload() {
             Application.LoadLevel(Application.loadedLevel);
         }
 
-            #endregion
+        #endregion
 
     }
 
